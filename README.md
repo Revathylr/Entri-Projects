@@ -13,4 +13,4 @@ Geographical Distribution:
 Visualize the geographic distribution of COVID-19 cases across different countries and regions, providing a clear overview of highly affected areas.
 
 Key Performance Indicators (KPIs):
-Monitor critical KPIs such as Case Fatality Rate (CFR), Recovery Rate, and Active Cases, helping to assess the severity and response to the pandemic.
+Monitor critical KPIs such as Case Fatality Rate, Recovery Rate, and Active Cases, helping to assess the severity and response to the pandemic.
