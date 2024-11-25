@@ -25,7 +25,7 @@ INSERT INTO persons_3 (id,Country_name,Population,Area) VALUES
 (103,'Nepal',9,2),
 (104,'Bruno',8,2),
 (105,'Brazil',14,12);
-
+#List of all conutries
 SELECT * FROM persons_3;
 SELECT * FROM country_3 
 UNION
