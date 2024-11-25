@@ -60,8 +60,6 @@ RIGHT JOIN country_1 C ON C.Population = P.Population;
 select * from country_1 
 union 
 select * from persons_1;
-UPDATE persons_1
-SET Rating = ROUND(Rating, 0);
 select * from persons_1;
 select * from persons_1;
 SELECT C.Country_name as country_1_country_name,C.id as country_1_id,C.Population as country_1_Population, C.Area as country_1_Area,
