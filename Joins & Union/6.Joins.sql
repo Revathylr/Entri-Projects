@@ -39,16 +39,19 @@ INSERT INTO persons_1 (id,F_name,L_name,Population,Rating,Country_ID,Country_nam
 (109,'Jane', 'Doe',3.2,4.3,209,'Australia'),
 (110,'Olivia', 'Martin',3.2,4.1,210,'Alaska');
 SELECT * FROM persons_1;
+#Inner Join
 SELECT C.Country_name as country_1_country_name,C.id as country_1_id, C.Population as country_1_Population, C.Area as country_1_Area,
        P.id as persons_1_id, P.F_name as persons_1_F_name,P.L_name as persons_1_L_name, P.Population as persons_1_Population, 
        P.Rating as persons_1_Rating,P.Country_ID as persons_1_Country_ID,P.Country_name as persons_1_Country_name
 FROM country_1 C
 INNER JOIN persons_1 P ON C.Country_name = P.Country_name;
+#Left join
 SELECT C.Country_name as country_1_country_name,C.id as country_1_id, C.Population as country_1_Population, C.Area as country_1_Area,
        P.id as persons_1_id, P.F_name as persons_1_F_name,P.L_name as persons_1_L_name, P.Population as persons_1_Population, 
        P.Rating as persons_1_Rating,P.Country_ID as persons_1_Country_ID,P.Country_name as persons_1_Country_name
 FROM country_1 C
 LEFT JOIN persons_1 P ON C.Country_name = P.Country_name;
+#Right join
 SELECT C.Country_name as country_1_country_name,C.id as country_1_id, C.Population as country_1_Population, C.Area as country_1_Area,
        P.id as persons_1_id, P.F_name as persons_1_F_name,P.L_name as persons_1_L_name, P.Population as persons_1_Population, 
        P.Rating as persons_1_Rating,P.Country_ID as persons_1_Country_ID,P.Country_name as persons_1_Country_name
