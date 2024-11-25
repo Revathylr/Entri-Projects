@@ -60,3 +60,14 @@ RIGHT JOIN country_1 C ON C.Population = P.Population;
 select * from country_1 
 union 
 select * from persons_1;
+UPDATE persons_1
+SET Rating = ROUND(Rating, 0);
+select * from persons_1;
+select * from persons_1;
+SELECT C.Country_name as country_1_country_name,C.id as country_1_id,C.Population as country_1_Population, C.Area as country_1_Area,
+       P.id as persons_1_id, P.F_name as persons_1_F_name,P.L_name as persons_1_L_name, P.Population as persons_1_Population, 
+       P.Rating as persons_1_Rating,P.Country_ID as persons_1_Country_ID,P.Country_name as persons_1_Country_name
+FROM persons_1 P   
+ROUND(P.Rating, 0) AS rounded_rating
+FROM 
+   persons_1 P;
